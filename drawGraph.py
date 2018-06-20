@@ -27,7 +27,7 @@ def generateTree(tree):
     return sVal
 
   def add_edge(graph, source, dest):
-    graph.edge(source, dest)
+    graph.edge(source, dest, label="left")
     
 
   def first_flat(tree):
