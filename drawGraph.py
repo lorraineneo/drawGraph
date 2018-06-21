@@ -45,10 +45,11 @@ def generateTree(tree):
         find_edges(graph, dest)
 
   if tree:
-    print(tree)
+    print("tree is not None", tree)
     exptree = listtree(tree) #converts Binary Tree to a list structure first
-    print(exptree)
+    print("exp"exptree)
     #print(exptree)
     graph = graphviz.Digraph()
-    find_edges(graph, exptree)
-    return graph
+    if exptree and len(exptree) > 1: 
+      find_edges(graph, exptree)
+      return graph
