@@ -44,7 +44,7 @@ def generateTree(tree):
         add_edge(graph,source, first_flat(dest))
         find_edges(graph, dest)
 
-  if tree:
+  if tree is not None:
     print("tree is not None", tree)
     exptree = listtree(tree) #converts Binary Tree to a list structure first
     print("exp"exptree)
