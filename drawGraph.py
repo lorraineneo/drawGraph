@@ -44,9 +44,9 @@ def generateTree(tree):
         add_edge(graph,source, first_flat(dest))
         find_edges(graph, dest)
 
-  
-  exptree = listtree(tree) #converts Binary Tree to a list structure first
-  #print(exptree)
-  graph = graphviz.Digraph()
-  find_edges(graph, exptree)
-  return graph
+  if tree:
+    exptree = listtree(tree) #converts Binary Tree to a list structure first
+    #print(exptree)
+    graph = graphviz.Digraph()
+    find_edges(graph, exptree)
+    return graph
