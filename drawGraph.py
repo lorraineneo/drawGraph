@@ -42,7 +42,7 @@ def find_edges(graph, tree):
         add_edge(graph,source, first_flat(dest))
         find_edges(graph, dest)
 def generateTree(tree):
-    if isinstance(tree, BinaryTree):
+    if tree:
       exptree = listtree(tree) #converts Binary Tree to a list structure first
       graph = graphviz.Digraph()
       find_edges(graph, exptree)
