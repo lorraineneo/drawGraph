@@ -16,7 +16,7 @@ def listtree(tree):
     '''
     sVal = []
     if tree:
-        sVal.append(str(tree.getRootVal()))
+        sVal.append(str(tree.getRootVal())+","+tree.size)
         if tree.getLeft() != None:
             sVal.append(listtree(tree.getLeft()))
 
@@ -24,8 +24,8 @@ def listtree(tree):
           sVal.append(listtree(tree.getRight()))
     return sVal
 
-def add_edge(graph, source, dest, label):
-    graph.edge(source, dest, label=label)
+def add_edge(graph, source, dest):
+    graph.edge(source, dest)
     
 
 def first_flat(tree):
