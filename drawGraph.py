@@ -16,7 +16,7 @@ def listtree(tree):
     '''
     sVal = []
     if tree:
-        sVal.append(str(tree.getRootVal())+","+str(tree.size))
+        sVal.append(str(tree.getRootVal()))
         if tree.getLeft() != None:
             sVal.append(listtree(tree.getLeft()))
 
