@@ -24,8 +24,8 @@ def listtree(tree):
           sVal.append(listtree(tree.getRight()))
     return sVal
 
-def add_edge(graph, source, dest):
-    graph.edge(source, dest)
+def add_edge(graph, source, dest, label):
+    graph.edge(source, dest, label=label)
     
 
 def first_flat(tree):
